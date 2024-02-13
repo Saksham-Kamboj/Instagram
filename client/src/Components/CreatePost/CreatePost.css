@@ -1,5 +1,5 @@
 .createPostContainer{
-    background: #fff;
+    background: #18181B;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,11 +10,12 @@
 
 
 .createPost {
+    background-color: #18181B;
     width: 350px;
     margin: 10px auto;
     border: 1px solid rgb(173, 173, 173);
     border-radius: 5px;
-    background-color: #fff;
+    color: #fff;
 }
 
 .main-div {
@@ -48,6 +49,9 @@
     font-weight: bolder;
     cursor: pointer;
 }
+#post-btn:hover {
+    color: #0a4772;
+}
 
 .details {
     border-top: 1px solid rgb(173, 173, 173);
@@ -62,6 +66,8 @@
     border: none;
     outline: none;
     resize: none;
+    background-color: #18181B;
+    color: #fff;
 }
 
 #output {

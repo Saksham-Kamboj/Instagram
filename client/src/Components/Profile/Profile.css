@@ -1,13 +1,10 @@
-body {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB1lN1hGZAj0MpZ1ZoN7tt7q38JyzTvjmSMQ&usqp=CAU");
-    background-size: cover;
-}
-
 .profile {
     width: 100%;
     margin: 10px auto;
     padding-top: 80px;
     min-height: 100vh;
+    background-color: #18181B;
+    color: #fff;
 }
 
 .profile-frame {
@@ -36,7 +33,7 @@ body {
 
 .profile-data h1,
 .profile-data h4 {
-    color: #000;
+    color: #fff;
 }
 
 .profile-info {
@@ -47,13 +44,13 @@ body {
 
 .profile-info p {
     padding: 0px 5px;
-    color: #000;
+    color: #ffffff90;
 }
 
 .hr {
     width: 70%;
     opacity: 0.8;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .gallery {
@@ -61,14 +58,14 @@ body {
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+    gap: 5px;
 }
 
 .gallery img {
     width: 100px;
     height: 100px;
-    margin: 5px;
     object-fit: cover;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0 2px;
 }
 
 .followBtn {

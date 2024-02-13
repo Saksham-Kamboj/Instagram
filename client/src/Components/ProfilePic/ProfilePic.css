@@ -1,3 +1,7 @@
+.heading h2{
+    color: #18181B;
+}
+
 @media (max-width: 768px) {
     .changePic div{
         padding: 15px 30px;
@@ -8,6 +12,4 @@
     .uploadBtn{
         text-align: center;
     }
-    
-
 }

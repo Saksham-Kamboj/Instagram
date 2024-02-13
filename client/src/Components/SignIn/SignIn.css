@@ -1,6 +1,5 @@
 .signIn {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB1lN1hGZAj0MpZ1ZoN7tt7q38JyzTvjmSMQ&usqp=CAU");
-    background-size: cover;
+    background-color: #18181B;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,8 +16,8 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background-color: rgba(0, 0, 0, 0.207);
     border-radius: 20px;
+    color: #fff;
 }
 
 .loginForm input {
@@ -29,13 +28,12 @@
     width: 100%;
     box-sizing: border-box;
     border-radius: 5px;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    background-color: #18181B;
+    color: #fff;
 }
 
-
-
 h2 {
-    color: rgba(0, 0, 0, 0.718);
+    color: #fff;
     margin-bottom: 20px;
 }
 
@@ -51,6 +49,10 @@ h2 {
     margin: 8px;
 }
 
+#login-btn:hover{
+    background-color: #053777;
+}
+
 .formLink a {
     text-decoration: none;
     color: #0a70f5;
@@ -58,11 +60,20 @@ h2 {
 }
 
 .formLink a:hover {
-    color: aqua;
+    color: #053777;
 }
 
 @media (max-width: 768px) {
-    .signIn{
-        height: 80vh;
+
+    .loginForm input{
+        padding: 10px;
     }
+
+    .loginForm h2{
+        font-size: 30px;
+   }
+    .signIn{
+        height: 93vh;
+    }
+
 }

@@ -1,6 +1,5 @@
 import './App.css'
-import logo1 from './Images/mobileLoge1.png';
-import logo2 from './Images/mobileLogo2.png';
+import logo from './Images/logo.png';
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './Components/Header/Header';
@@ -26,8 +25,7 @@ function App() {
       <LoginContext.Provider value={{ setUserLogin, setModalOpen }}>
         <>
           <div className="mobileLogo">
-            <img src={logo1} alt="" />
-            <img src={logo2} alt="" />
+            <img src={logo} alt="" />
           </div>
           <div className="window">
             <Header login={userLogin} />

@@ -1,5 +1,5 @@
 body{
-    background: #fff;
+    background: #18181B;
 }
 .messanger{
     display: flex;
@@ -11,7 +11,7 @@ body{
 }
 
 .messanger h1{
-    color: #000;
+    color: #fff;
 }
 .messanger h2{
     font-size: 500%;
@@ -20,7 +20,7 @@ body{
 
 @media (max-width: 768px) {
     .messanger{
-        height: 87vh;
+        height: 94vh;
     }
     .messanger h1{
         font-size: 16px;

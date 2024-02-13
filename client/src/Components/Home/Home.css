@@ -3,16 +3,14 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    /* gap: 2px; */
-    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB1lN1hGZAj0MpZ1ZoN7tt7q38JyzTvjmSMQ&usqp=CAU");
-    background-size: cover;
-    background-repeat: no-repeat; */
-    background: #fff;
+    gap: 2px;
+    background: #18181B;
+    color: #fff;
 }
 
 .dataNoAvailable {
-    color: #000;
-    height: 60vh;
+    color: #fff;
+    height: 70vh;
     text-align: center;
     margin-top: 20%;
 }
@@ -29,7 +27,9 @@
     margin: 0px auto;
     border: 1px solid rgb(173, 173, 173);
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #18181B;
+    color: #fff;
+    overflow: hidden;
 }
 
 .card-header {
@@ -37,7 +37,7 @@
     height: 10%;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.311);
+    border-bottom: 1px solid rgb(173, 173, 173)
 }
 
 .card-pic {
@@ -63,7 +63,11 @@
 
 .userName>h5 a {
     text-decoration: none;
-    color: #000000ca;
+    color: #fff;
+}
+
+.userName>h5 a:hover {
+    color: #716e6e;
 }
 
 .cardContent {
@@ -78,18 +82,16 @@
     height: 8%;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid rgb(173, 173, 173)
 }
 
 .postBody p {
-    padding: 5px;
+    padding: 0 5px;
     font-size: 16px;
 }
 
 .postImg {
     width: 100%;
     height: 92%;
-    border-bottom: 1px solid rgb(173, 173, 173)
 }
 
 .postImg img {
@@ -106,6 +108,15 @@
     border-bottom: 1px solid rgb(173, 173, 173);
 }
 
+.viewComments {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.viewComments:hover {
+    color: #716e6e;
+}
+
 .add-comment {
     display: flex;
     align-items: center;
@@ -120,6 +131,8 @@
     border: none;
     padding: 10px;
     width: 100%;
+    background-color: #18181B;
+    color: #fff;
 }
 
 .comment {
@@ -160,13 +173,12 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(16, 13, 13, 0.4);
 }
 
 .container {
     display: flex;
     width: 100%;
-    background-color: white;
+    background-color: #18181B;
     position: absolute;
     top: 10%;
     left: 10%;
@@ -174,7 +186,7 @@
 }
 
 .postPic {
-    background-color: black;
+    background-color: #18181B;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -191,10 +203,19 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #18181B;
+    color: #fff;
+    border-top: none;
 }
 
 #card-header {
     height: 10%;
+    border-bottom: none;
+}
+
+#details hr{
+    width: 100%;
+    border-bottom: 1px solid #ffffff7c;
 }
 
 .comment-section {
@@ -209,6 +230,20 @@
     overflow: scroll;
 }
 
+.commenter{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.commentText{
+    font-size: 12px;
+    color: #ffffffd0;
+}
+
+.details .card-content{
+    border-bottom: none;
+}
+
 .close-comment {
     position: fixed;
     top: 1%;
@@ -220,7 +255,7 @@
 }
 
 .face {
-    font-size: 40px;
+    font-size: 30px;
     cursor: pointer;
 }
 
@@ -229,6 +264,7 @@
 
     .card {
         height: 700px;
+        width: 99%;
     }
 
     .card-pic {

@@ -2,11 +2,12 @@ import React, { useContext } from "react";
 import { Link } from 'react-router-dom';
 import { LoginContext } from "../../context/LoginContext";
 import "./Header.css";
-import logo from '../../Images/banner.png';
+import logo from '../../Images/logo.png';
 import { FaHome, FaPlusCircle, FaUserFriends, FaPenNib } from "react-icons/fa";
 import { RiMessage2Fill } from "react-icons/ri";
-import { FaCircleArrowLeft, FaCircleArrowRight } from "react-icons/fa6";
+import { FaCircleArrowRight } from "react-icons/fa6";
 import { CgProfile } from "react-icons/cg";
+import { RxExit } from "react-icons/rx";
 
 
 
@@ -54,7 +55,7 @@ function Header() {
           </li>
           <li>
             <button className='primaryBtn' onClick={() => setModalOpen(true)}>
-              <FaCircleArrowLeft className="navIconBtn logout" />
+              <RxExit className="navIconBtn logout" />
               <span className="span span2">LogOut</span>
             </button>
           </li>
@@ -65,13 +66,15 @@ function Header() {
         <>
           <li>
             <Link to="/signUp"><FaPenNib className="navIconBtn" />
-              <span className="span">SignUp</span>
+              {/* <span className="span">SignUp</span> */}
+              SignUp
             </Link>
           </li>
           <li>
             <Link to="/signIn">
               <FaCircleArrowRight className="navIconBtn" />
-              <span className="span">SignIn</span>
+              {/* <span className="span">SignIn</span> */}
+              SignIn
             </Link>
           </li>
         </>

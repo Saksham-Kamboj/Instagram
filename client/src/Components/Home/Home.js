@@ -28,41 +28,41 @@ function Home() {
 
   useEffect(() => {
     const fetchPosts = () => {
-        // Fetching all posts
-        fetch(`/allposts?limit=${limit}&skip=${skip}`, {
-            headers: {
-                Authorization: "Bearer " + localStorage.getItem("jwt"),
-            },
-        })
+      // Fetching all posts
+      fetch(`/allposts?limit=${limit}&skip=${skip}`, {
+        headers: {
+          Authorization: "Bearer " + localStorage.getItem("jwt"),
+        },
+      })
         .then((res) => res.json())
         .then((result) => {
-            // Append new posts to the existing data
-            setData((prevData) => [...prevData, ...result]);
-            setLoading(false);
+          // Append new posts to the existing data
+          setData((prevData) => [...prevData, ...result]);
+          setLoading(false);
         })
         .catch((err) => {
-            setLoading(false);
+          setLoading(false);
         });
     };
 
     const token = localStorage.getItem("jwt");
     if (!token) {
-        navigate("./signup");
+      navigate("./signup");
     }
 
     const handleScroll = () => {
-        if (
-            document.documentElement.clientHeight + document.pageYOffset >=
-            document.documentElement.scrollHeight
-        ) {
-            setSkip((prevSkip) => prevSkip + limit);
-        }
+      if (
+        document.documentElement.clientHeight + document.pageYOffset >=
+        document.documentElement.scrollHeight
+      ) {
+        setSkip((prevSkip) => prevSkip + limit);
+      }
     };
 
     fetchPosts();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-}, [navigate, skip]);
+  }, [navigate, skip]);
 
 
   useEffect(() => {
@@ -192,7 +192,7 @@ function Home() {
                   )}
                   <p>{posts.likes.length} Likes</p>
                   <p
-                    style={{ fontWeight: "bold", cursor: "pointer" }}
+                    className="viewComments"
                     onClick={() => toggleComment(posts)}
                   >
                     View all comments
@@ -231,7 +231,6 @@ function Home() {
                   <div
                     className="card-header"
                     id="card-header"
-                    style={{ borderBottom: "1px solid #00000029" }}
                   >
                     <div className="card-pic">
                       <img
@@ -239,20 +238,19 @@ function Home() {
                         alt=""
                       />
                     </div>
-                    <h5>{item.postedBy.name}</h5>
+                    <h3>{item.postedBy.name}</h3>
                   </div>
+                  <hr />
 
                   {/* commentSection */}
                   <div
                     className="comment-section"
                     id="comment-section"
-                    style={{ borderBottom: "1px solid #00000029" }}
                   >
                     {item.comments.map((comment, index) => (
                       <p className="comm" key={index}>
                         <span
                           className="commenter"
-                          style={{ fontSize: "15px", fontWeight: "bold" }}
                         >
                           {comment.postedBy.name}{" - "}
                         </span>
@@ -260,13 +258,13 @@ function Home() {
                       </p>
                     ))}
                   </div>
-
+                  <hr />
                   {/* card content */}
                   <div className="card-content">
                     <p>{item.likes.length} Likes</p>
                     <p>{item.body}</p>
                   </div>
-
+                  <hr />
                   {/* add Comment */}
                   <div className="add-comment">
                     <FaRegGrinTongueSquint className="face" />
