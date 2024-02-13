@@ -1,16 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.59fdd646.css",
-    "main.js": "/static/js/main.779867af.js",
-    "static/media/banner.png": "/static/media/banner.ba061d03c3add62517a1.png",
-    "static/media/mobileLoge1.png": "/static/media/mobileLoge1.b9d776b8cc117011bdf7.png",
-    "static/media/mobileLogo2.png": "/static/media/mobileLogo2.504aad996123ff348662.png",
+    "main.css": "/static/css/main.91339b80.css",
+    "main.js": "/static/js/main.424610d6.js",
+    "static/media/logo.png": "/static/media/logo.217747edf1b4f3b0d471.png",
     "index.html": "/index.html",
-    "main.59fdd646.css.map": "/static/css/main.59fdd646.css.map",
-    "main.779867af.js.map": "/static/js/main.779867af.js.map"
+    "main.91339b80.css.map": "/static/css/main.91339b80.css.map",
+    "main.424610d6.js.map": "/static/js/main.424610d6.js.map"
   },
   "entrypoints": [
-    "static/css/main.59fdd646.css",
-    "static/js/main.779867af.js"
+    "static/css/main.91339b80.css",
+    "static/js/main.424610d6.js"
   ]
 }
