@@ -1,0 +1,165 @@
+.navbar {
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB1lN1hGZAj0MpZ1ZoN7tt7q38JyzTvjmSMQ&usqp=CAU");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 0px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    height: 100vh;
+    border-right: 1px solid gray;
+}
+
+.mobileLogo {
+    display: none;
+}
+
+.navbar img {
+    width: 80%;
+    object-fit: contain;
+    margin-top: 30px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+li .span:active,
+li .span:hover {
+    color: rgb(4, 241, 254);
+}
+
+
+li .span:focus {
+    color: red;
+}
+
+li button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+li .logout {
+    color: red;
+}
+
+li .span2:hover {
+    color: red;
+}
+
+.profileName img {
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.navIconBtn {
+    font-size: 30px;
+}
+
+.primaryBtn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 18px;
+}
+
+
+
+@media (max-width: 768px) {
+    .home {
+        padding-top: 72px;
+    }
+
+    .navbar {
+        background: #fff;
+        position: sticky;
+        width: 100%;
+        height: 60px;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 0;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-top: 1px solid rgba(128, 128, 128, 0.5);
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .mobileLogo {
+        /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB1lN1hGZAj0MpZ1ZoN7tt7q38JyzTvjmSMQ&usqp=CAU");
+        background-size: cover;
+        background-repeat: no-repeat; */
+        background: #fff;
+        display: flex;
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    }
+
+    .mobileLogo img {
+        width: 40%;
+        object-fit: contain;
+    }
+
+    ul {
+        flex-direction: row;
+        margin-bottom: 0;
+        margin: 0 auto;
+        gap: 30px;
+        align-items: center;
+    }
+
+    li span {
+        display: none;
+    }
+
+    .profileName img {
+        width: 30px;
+        height: 30px;
+        margin-right: 0;
+        margin: 0;
+    }
+
+    .navIconBtn {
+        font-size: 30px;
+    }
+
+    .primaryBtn {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,10 @@
+.window{
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .window{
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+}

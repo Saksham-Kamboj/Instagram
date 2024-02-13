@@ -1,0 +1,32 @@
+body{
+    background: #fff;
+}
+.messanger{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+
+.messanger h1{
+    color: #000;
+}
+.messanger h2{
+    font-size: 500%;
+}
+
+
+@media (max-width: 768px) {
+    .messanger{
+        height: 87vh;
+    }
+    .messanger h1{
+        font-size: 16px;
+    }
+    h2{
+        font-size: 500%;
+    }
+
+}
